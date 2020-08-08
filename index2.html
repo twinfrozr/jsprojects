@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS on Steroids</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>
+            Challege 1: Your age in days
+        </h2>
+        <div class="flex-box-container-1">
+        
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>    
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challege 2: Cat generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        
+        <div class="flex-box-container-2" id="flex-cat-gen">
+            
+        </div>
+
+    </div>
+    
+    <div class="container-3">
+        <h2>Challege 3: Rock papers and scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://www.clipart1001.com/wp-content/uploads/2019/05/Animated-Rock-Clipart-Ilmenskie-Dull-Mid.jpg" height=150 width=150 onclick="rpsGame(this)" >
+            <img id="paper" src="https://images.pond5.com/animated-paper-sheets-illustration-whiteboard-footage-042573484_iconm.jpeg" height=150 width=150 onclick="rpsGame(this)" >
+            <img id="scissors" src="https://media.fds.fi/product_image/800/14FiskarsSS2017_iso_HV.jpg" height="150" width="150" onclick="rpsGame(this)">
+    
+        </div>
+    </div>
+    <div class="container-4">
+        <h2 id="change-my-color">challenge 4</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="reset">reset</option>
+                    
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
